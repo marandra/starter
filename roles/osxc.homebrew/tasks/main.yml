@@ -7,7 +7,7 @@
   when: installation_method == 'clone'
 
 - name: Update Homebrew
-  homebrew: update_homebrew=no
+  homebrew: update_homebrew=yes
 
 - include: cask.yml
   when: install_cask
