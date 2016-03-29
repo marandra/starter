@@ -4,7 +4,8 @@
   roles:
   - role: osxc.packages
     brew_taps:
-    - caskroom/fonts
+    #- caskroom/fonts
+    - homebrew/science
     brew_packages:
     - ctags
     - ffmpeg
@@ -13,13 +14,13 @@
     - gnuplot
     - htop-osx
     - mkvtoolnix
-    - octave
+    - octave  # homebrew/science
     - python3
     - tree
     - unrar
     - vim
     - wget
-    - wxmaxima #ver caveats brew info
+    - wxmaxima # homebrew/science, ver caveats brew info
     cask_packages:
     - identify
     - iterm2
