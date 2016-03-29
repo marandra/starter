@@ -6,10 +6,10 @@
         mode=0544
   with_items: "{{affected_users}}"
 
-- name: create dotfiles if not existing
+- name: create dotfiles if missing
   file: dest=/Users/{{ item[0] }}/{{ item[1] }}
         state=touch
-        owner={{ item }}
+        owner={{ item[0] }}
         mode=0544
   with_nested:
   - "{{ affected_users }}"
