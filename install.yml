@@ -6,14 +6,43 @@
     brew_taps:
     - caskroom/fonts
     brew_packages:
-    - git
-    - zsh
-    - vim
-    - the_silver_searcher
     - ctags
-    - reattach-to-user-namespace
-    - tmux
+    - ffmpeg
+    - gcc
+    - git
+    - gnuplot
+    - htop-osx
+    - mkvtoolnix
+    - octave
+    - python3
+    - tree
+    - unrar
+    - vim
+    - wget
+    - wxmaxima #ver caveats brew info
     cask_packages:
-    - font-inconsolata-for-powerline
+    - identify
     - iterm2
+    - google-chrome
+    - dropbox
+    - firefox
     - macvim
+    - mp4tools
+    - skype
+    - transmit
+    - vagrant
+    - vagrant-manager
+    - vlc
+    - virtualbox
+    - gnucash
+    - android-file-transfer
+    - bittorrent-sync
+    - pixelstick
+    - proxpn
+    - flux
+    - insomniax
+    - disk-inventory-x
+    - teamviewer
+    - skim
+    - mactex
+    - itsycal
