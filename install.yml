@@ -4,7 +4,7 @@
   roles:
   - role: osxc.packages
     brew_taps:
-    #- caskroom/fonts
+    - caskroom/fonts
     - homebrew/science
     brew_packages:
     - ctags
@@ -27,6 +27,7 @@
     - google-chrome
     - dropbox
     - firefox
+    - font-inconsolata-for-powerline
     - macvim
     - mp4tools
     - skype
