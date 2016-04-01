@@ -6,6 +6,7 @@
     brew_taps:
     - caskroom/fonts
     - homebrew/science
+    - homebrew/dupes
     brew_packages:
     - ctags
     - ffmpeg
@@ -19,8 +20,39 @@
     - tree
     - unrar
     - vim
-    - wget
     - wxmaxima # homebrew/science, ver caveats brew info
+    brew_packages_options:
+    # gnu versions
+    - p: findutils
+      o: default-names
+    - p: gnu-sed
+      o: default-names
+    - p: gnu-tar
+      o: default-names
+    - p: gnu-which
+      o: default-names
+    - p: gnutls
+      o: default-names
+    - p: grep
+      o: default-names
+    - p: coreutils
+      o: ''
+    - p: binutils
+      o: ''
+    - p: diffutils
+      o: ''
+    - p: gzip
+      o: ''
+    - p: watch
+      o: ''
+    - p: tmux 
+      o: ''
+    - p: wget
+      o: ''
+    - p: nmap
+      o: ''
+    - p: gpg
+      o: ''
     cask_packages:
     - silverlight
     - identify

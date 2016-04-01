@@ -12,3 +12,5 @@ elseif ($ITERM_PROFILE == 'solarized-light')
 else
     colorscheme desert
 endif
+
+set pastetoggle=<F10>
