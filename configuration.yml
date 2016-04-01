@@ -3,24 +3,16 @@
 - hosts: all
   roles:
   - role: osxc.repository
-    clone_url: https://github.com/square/maximum-awesome.git
+    clone_url: https://github.com/tpope/vim-pathogen.git
     dest: /Users/{{ ansible_user_id }}/.vim
-    links:
-    - src: vimrc
-      dest: /Users/{{ ansible_user_id }}/.vimrc
-    - src: vimrc.bundles
-      dest: /Users/{{ ansible_user_id }}/.vimrc.bundles
-    - src: tmux.conf
-      dest: /Users/{{ ansible_user_id }}/.tmux.conf
   - role: osxc.repository
-    clone_url: https://github.com/gmarik/vundle.git
-    dest: /Users/{{ ansible_user_id }}/.vim/bundle/vundle
+    clone_url: https://github.com/tpope/vim-sensible.git
+    dest: /Users/{{ ansible_user_id }}/.vim/bundle/vim-sensible
   - role: osxc.repository
-    clone_url: https://github.com/VundleVim/Vundle.vim.git 
-    dest: /Users/{{ ansible_user_id }}/.vim/bundle/Vundle.vim
+    clone_url: https://github.com/altercation/vim-colors-solarized.git
+    dest: /Users/{{ ansible_user_id }}/.vim/bundle/vim-colors-solarized
   post_tasks:
-  - copy: src=dotfiles/vimrc.local dest=/Users/{{ ansible_user_id }}/.vimrc.local backup=yes
-  - copy: src=dotfiles/vimrc.bundles.local dest=/Users/{{ ansible_user_id }}/.vimrc.bundles.local backup=yes
+  - copy: src=dotfiles/vimrc dest=/Users/{{ ansible_user_id }}/.vimrc backup=yes
 
 - hosts: all
   roles:

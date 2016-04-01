@@ -22,12 +22,18 @@
     - wget
     - wxmaxima # homebrew/science, ver caveats brew info
     cask_packages:
+    - silverlight
     - identify
     - iterm2
     - google-chrome
     - dropbox
     - firefox
-    - font-inconsolata-for-powerline
+    - font-andale-mono
+    - font-anonymous-pro-for-powerline
+    - font-dejavu-sans
+    - font-inconsolata-g-for-powerline
+    - font-m-plus
+    - font-terminus
     - macvim
     - mp4tools
     - skype
